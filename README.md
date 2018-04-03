@@ -12,11 +12,11 @@ public class Factorial {
             try {
                 i = Integer.valueOf(br.readLine());
             } catch (IOException | NumberFormatException e) {
-                System.out.println("Ошибка ввода");
+                System.out.println("Ошибка ввода!");
                 continue;
             }
             if (i <= 0) {
-                System.out.println("Значение меньше нуля");
+                System.out.println("Значение меньше нуля!");
                 continue;
             }
             BigInteger answer = BigInteger.valueOf(1);
