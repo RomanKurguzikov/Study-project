@@ -1,0 +1,110 @@
+
+header {
+  display: flex;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: autox;
+}
+/*
+form.form {
+    display: table;
+}
+
+div.form {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+} */
+
+input {
+  text-align: center;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.crypto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  height: auto;
+  padding: 0 1rem;
+}
+
+#bitcoin,
+#ethereum,
+#xpr,
+#tron {
+  width: 100%;
+  height: auto;
+  padding: 0 auto;
+}
+
+#bitcoin,
+#ethereum,
+#xpr,
+#tron h3 {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+
+/* Charts Bar Section */
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#BTC {background-color: red;}
+#ETH {background-color: green;}
+#XRP {background-color: blue;}
+#TRX {background-color: orange;}
+
+
+footer {
+  display: flex;
+}
