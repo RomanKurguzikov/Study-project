@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Crypto Exchange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+  </head>
+  <body>
+
+    <!-- Header Section -->
+    <header>
+      <img src="" alt="Crypto Logo">
+      <h1>
+        <span>CRYPTO</span>EXCHANGE
+      </h1>
+      <ul class="dashboard">
+        <li> <a href="#">Coins info </a> </li>
+        <li> <a href="#charts">Charts</a> </li>
+        <li> <a href="#">About company</a> </li>
+      </ul>
+
+      <!-- Sliding sub-menu -->
+      <div class="hover-info">
+        <ul>
+          <li> <img src="" alt=""> <a href="#">Bitcoin (BTC)</a></li>
+          <li> <img src="" alt=""> <a href="#">Ethereum (ETH)</a></li>
+          <li> <img src="" alt=""> <a href="#">XRP (XRP)</a></li>
+          <li> <img src="" alt=""> <a href="#">TRON (TRX)</a></li>
+        </ul>
+      </div>
+      <div class="hover-about">
+        <ul>
+          <li> <img src="" alt=""> <a href="#">About us</a></li>
+          <li> <img src="" alt=""> <a href="#">Sotial</a></li>
+          <li> <img src="" alt=""> <a href="#">Contacts</a></li>
+          <li> <img src="" alt=""> <a href="#">Support</a></li>
+        </ul>
+      </div>
+
+      <ul class="authorisation">
+        <li> <a href="#">Log In</a> </li>
+        <li> <a href="#">Sign Up</a> </li>
+      </ul>
+    </header>
+
+    <!-- Main Container Section -->
+    <div class="main-container">
+
+      <!-- Banner Section -->
+      <div class="banner">
+        <h1>Exhange your digital currency</h1>
+        <p>CryptoExchange is the best place to buy, sell, and manage your digital currency</p>
+        <div class="email">
+          <form action="" target="_blank" method="post" class="form-example" novalidate>
+            <div class="form input">
+              <!-- <label for="email">Enter your email: </label> -->
+              <input type="email" value="Email adress" name="email" id="email">
+              <input type="submit" value="Get Started">
+            </div>
+          </form>
+          <!-- <span>Email adress</span>
+          <span>Get Started</span> -->
+        </div>
+      </div>
+
+      <!-- Charst Section -->
+      <div id="charts" class="charts">
+        <div class="crypto">
+          <div id="bitcoin" class="widget">
+            <script type="text/javascript">
+              baseUrl = "https://widgets.cryptocompare.com/";
+              var scripts = document.getElementsByTagName("script");
+              var embedder = scripts[ scripts.length - 1 ];
+              (function (){
+              var appName = encodeURIComponent(window.location.hostname);
+              if(appName==""){appName="local";}
+              var s = document.createElement("script");
+              s.type = "text/javascript";
+              s.async = true;
+              var theUrl = baseUrl+'serve/v1/coin/chart?fsym=BTC&tsym=USD';
+              s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+              embedder.parentNode.appendChild(s);
+              })();
+            </script>
+            <div class="hover-widget">
+              <a href="#">Buy Bitcoin</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="crypto">
+          <div id="ethereum" class="widget">
+            <script type="text/javascript">
+              baseUrl = "https://widgets.cryptocompare.com/";
+              var scripts = document.getElementsByTagName("script");
+              var embedder = scripts[ scripts.length - 1 ];
+              (function (){
+              var appName = encodeURIComponent(window.location.hostname);
+              if(appName==""){appName="local";}
+              var s = document.createElement("script");
+              s.type = "text/javascript";
+              s.async = true;
+              var theUrl = baseUrl+'serve/v1/coin/chart?fsym=ETH&tsym=USD';
+              s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+              embedder.parentNode.appendChild(s);
+              })();
+            </script>
+            <div class="hover-widget">
+              <a href="#">Buy Bitcoin</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="crypto">
+          <div id="xrp" class="widget">
+            <script type="text/javascript">
+              baseUrl = "https://widgets.cryptocompare.com/";
+              var scripts = document.getElementsByTagName("script");
+              var embedder = scripts[ scripts.length - 1 ];
+              var cccTheme = {"Header":{"displayFollowers":false}};
+              (function (){
+              var appName = encodeURIComponent(window.location.hostname);
+              if(appName==""){appName="local";}
+              var s = document.createElement("script");
+              s.type = "text/javascript";
+              s.async = true;
+              var theUrl = baseUrl+'serve/v1/coin/chart?fsym=XRP&tsym=USD';
+              s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+              embedder.parentNode.appendChild(s);
+              })();
+            </script>
+            <div class="hover-widget">
+              <a href="#">Buy Bitcoin</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="crypto">
+          <div id="tron" class="widget">
+            <script type="text/javascript">
+              baseUrl = "https://widgets.cryptocompare.com/";
+              var scripts = document.getElementsByTagName("script");
+              var embedder = scripts[ scripts.length - 1 ];
+              var cccTheme = {"Header":{"displayFollowers":false}};
+              (function (){
+              var appName = encodeURIComponent(window.location.hostname);
+              if(appName==""){appName="local";}
+              var s = document.createElement("script");
+              s.type = "text/javascript";
+              s.async = true;
+              var theUrl = baseUrl+'serve/v1/coin/chart?fsym=TRX&tsym=USD';
+              s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+              embedder.parentNode.appendChild(s);
+              })();
+            </script>
+            <div class="hover-widget">
+              <a href="#">Buy Bitcoin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charts Bar Section -->
+    <div id="navbar" class="main-charts">
+      <h2>Predict your CRYPTO trends</h2>
+
+      <button class="tablink" onclick="openPage('BTC', this, 'red')" id="defaultOpen">Bitcoin</button>
+      <button class="tablink" onclick="openPage('ETH', this, 'green')">Ethereum</button>
+      <button class="tablink" onclick="openPage('XRP', this, 'blue')">XRP</button>
+      <button class="tablink" onclick="openPage('TRX', this, 'orange')">Tron</button>
+
+      <div id="BTC" class="tabcontent">
+        <script type="text/javascript">
+          baseUrl = "https://widgets.cryptocompare.com/";
+          var scripts = document.getElementsByTagName("script");
+          var embedder = scripts[ scripts.length - 1 ];
+          var cccTheme = {"Chart":{"animation":true}};
+          (function (){
+          var appName = encodeURIComponent(window.location.hostname);
+          if(appName==""){appName="local";}
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          var theUrl = baseUrl+'serve/v3/coin/chart?fsym=BTC&tsyms=USD,EUR';
+          s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+          embedder.parentNode.appendChild(s);
+          })();
+        </script>
+      </div>
+
+      <div id="ETH" class="tabcontent">
+        <script type="text/javascript">
+          baseUrl = "https://widgets.cryptocompare.com/";
+          var scripts = document.getElementsByTagName("script");
+          var embedder = scripts[ scripts.length - 1 ];
+          (function (){
+          var appName = encodeURIComponent(window.location.hostname);
+          if(appName==""){appName="local";}
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          var theUrl = baseUrl+'serve/v3/coin/chart?fsym=ETH&tsyms=USD,EUR';
+          s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+          embedder.parentNode.appendChild(s);
+          })();
+        </script>
+      </div>
+
+      <div id="XRP" class="tabcontent">
+        <script type="text/javascript">
+          baseUrl = "https://widgets.cryptocompare.com/";
+          var scripts = document.getElementsByTagName("script");
+          var embedder = scripts[ scripts.length - 1 ];
+          (function (){
+          var appName = encodeURIComponent(window.location.hostname);
+          if(appName==""){appName="local";}
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          var theUrl = baseUrl+'serve/v3/coin/chart?fsym=XRP&tsyms=USD,EUR';
+          s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+          embedder.parentNode.appendChild(s);
+          })();
+        </script>
+      </div>
+
+      <div id="TRX" class="tabcontent">
+        <div class="main-chart">
+          <script type="text/javascript">
+            baseUrl = "https://widgets.cryptocompare.com/";
+            var scripts = document.getElementsByTagName("script");
+            var embedder = scripts[ scripts.length - 1 ];
+            var cccTheme = {"Chart":{"animation":true}};
+            (function (){
+            var appName = encodeURIComponent(window.location.hostname);
+            if(appName==""){appName="local";}
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            var theUrl = baseUrl+'serve/v3/coin/chart?fsym=TRX&tsyms=USD,EUR';
+            s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+            embedder.parentNode.appendChild(s);
+            })();
+          </script>
+        </div>
+      </div>
+
+      <!-- ChartsBar Script Section -->
+      <script type="text/javascript">
+        function openPage(pageName, elmnt, color) {
+          // Hide all elements with class="tabcontent" by default */
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+
+          // Remove the background color of all tablinks/buttons
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].style.backgroundColor = "";
+          }
+
+          // Show the specific tab content
+          document.getElementById(pageName).style.display = "block";
+
+          // Add the specific color to the button used to open the tab content
+          elmnt.style.backgroundColor = color;
+        }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+    </div>
+
+
+
+    <!-- Manual section -->
+    <div class="start-trading">
+      <h2>Get started in a few minutes</h2>
+      <div class="sequence">
+        <div class="create-account">
+          <img src="" alt="Authorisation icon">
+          <p>Create an account</p>
+        </div>
+        <div class="linck-wallet">
+          <img src="" alt="Wallet icon">
+          <p>Create an account</p>
+        </div>
+        <div class="buy-sell">
+          <img src="" alt="Coins icon">
+          <p>Create an account</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="email">
+        <form action="" target="_blank" method="post" class="form-example" novalidate>
+          <div class="form input">
+            <!-- <label for="email">Enter your email: </label> -->
+            <input type="email" value="Email adress" name="email" id="email">
+            <input type="submit" value="Get Started">
+          </div>
+        </form>
+      </div>
+
+      <div class="copyright">
+        <span>&copy; CryptoExchange 2018</span>
+        <span>
+          <p>Contacts</p>
+          <p>Social</p>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
